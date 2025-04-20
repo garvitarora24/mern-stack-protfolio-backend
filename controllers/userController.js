@@ -104,6 +104,8 @@ export const logout=catchAsyncErrors(async(req,res,next)=>{
     }).json({
         success:true,
         message:"Logged out",
+        sameSite:"None",
+        secure:true
     })
 })
 
